@@ -1,13 +1,22 @@
 .filter {
   display: flex;
-  justify-content: center;
   gap: 8px;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+  
+  @include tablet {
+    margin-bottom: 30px;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+  @include desktop {
+    margin-bottom: 50px;
+  }
 }
 .filter__btn {
   @include font(16, 1.62, 500, 0.03);
   font-family: inherit;
-   color: var(--main-text-color);
+  color: var(--main-text-color);
   background-color: var(--background-color);
   border-radius: 4px;
   cursor: pointer;

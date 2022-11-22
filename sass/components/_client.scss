@@ -2,10 +2,23 @@
   display: flex;
   gap: 30px;
   justify-content: center;
+  flex-wrap: wrap;
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+  }
 }
 .pic__item {
-  width: calc((100% - 150px) / 6);
-  height: 92px;
+   height: 92px;
+  
+  @media screen and (min-width: 480px) {
+    width: calc((100% - 30px) / 2);
+  }
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 60px) / 3);
+  }
+  @media screen and(min-width:1200px) {
+    width: calc((100% - 150px)/6);
+  }
 }
 .pic__link {
   display: flex;

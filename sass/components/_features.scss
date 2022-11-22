@@ -1,9 +1,20 @@
 .features__list {
   display: flex;
   gap: 30px;
+  flex-wrap: wrap;
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+  }
 }
 .features__item {
-  max-width: 270px;
+  // max-width: 270px;
+  // width: 100%;
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 30px) / 2);
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 30px) / 4);
+  }
 }
 .features__wrapper {
   display: flex;
@@ -20,6 +31,10 @@
   text-transform: uppercase;
   color: var(--main-text-color);
   margin-bottom: 10px;
+  text-align: center;
+  @media screen and (min-width: 768px) {
+    text-align:start;
+  }
 }
 .features__text {
   @include font(14, 1.71, null, 0.03);

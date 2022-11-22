@@ -16,11 +16,16 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+  
+  width: 100%;
 }
 body {
   font-family: "Roboto", sans-serif;
   color: var(--main-text-color);
   background-color: var(--main-background-color);
+}
+body.modal-open{
+  overflow: hidden;
 }
 a {
   text-decoration: none;

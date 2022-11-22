@@ -43,7 +43,7 @@
         </nav>
         <ul class="connect header__connect list">
           <li>
-            <a href="mailto:info@devstudio.com" class="connect__link">
+            <a href="mailto:info@devstudio.com" class="connect__link mail">
               <svg class="icon__mail" width="16" height="12">
                 <use href="./imges/icons.svg#envelope-hover-1"></use>
               </svg>
@@ -51,7 +51,7 @@
             </a>
           </li>
           <li>
-            <a href="tel:+380961111111" class="connect__link">
+            <a href="tel:+380961111111" class="connect__link tell">
               <svg class="icon__tell" width="10" height="16">
                 <use href="./imges/icons.svg#smartphone"></use>
               </svg>
@@ -59,6 +59,90 @@
             </a>
           </li>
         </ul>
+        <button type="button" class="menu__open" data-menu-open>
+          <svg class="icon-menu" width="24" height="16">
+            <use href="./imges/icons.svg#icon-mob-menu"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mob-menu is-hidden" data-menu>
+        <div class="mob-menu__container">
+          <div class="mob-menu__top">
+            <button type="button" class="menu__close" data-menu-close>
+              <svg class="icon-close-menu" width="18.67" height="18.67">
+                <use href="./imges/icons.svg#icon-close-mob-menu"></use>
+              </svg>
+            </button>
+
+            <ul class="mob-menu__list list">
+              <li class="mob-menu__item">
+                <a href="./index.html" class="mob-menu__link current">Студія</a>
+              </li>
+              <li class="mob-menu__item">
+                <a href="./portfolio.html" class="mob-menu__link">Портфоліо</a>
+              </li>
+              <li class="mob-menu__item">
+                <a href="" class="mob-menu__link">Контакти</a>
+              </li>
+            </ul>
+          </div>
+          <div class="mob-menu__bottom">
+            <ul class="mob-connect list">
+              <li class="mob-connect__items">
+                <a href="tel:+380961111111" class="mob-connect__tell">
+                  +38 096 111 11 11
+                </a>
+              </li>
+              <li>
+                <a href="mailto:info@devstudio.com" class="mob-connect__mail">
+                  info@devstudio.com
+                </a>
+              </li>
+            </ul>
+            <ul class="mob-soc__list list">
+              <li class="mob-soc__items">
+                <a
+                  href=""
+                  class="mob-soc__link link"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  Instagram
+                </a>
+              </li>
+              <li class="mob-soc__items">
+                <a
+                  href=""
+                  class="mob-soc__link link"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  Twitter
+                </a>
+              </li>
+              <li class="mob-soc__items">
+                <a
+                  href=""
+                  class="mob-soc__link link"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  Facebook
+                </a>
+              </li>
+              <li class="mob-soc__items">
+                <a
+                  href=""
+                  class="mob-soc__link link"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  LinkedIn
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <main>
@@ -87,9 +171,7 @@
                   <use href="./imges/icons.svg#antenna-1"></use>
                 </svg>
               </div>
-              <h3 class="section-subtitle features__title">
-                УВАГА ДО ДЕТАЛЕЙ
-              </h3>
+              <h3 class="section-subtitle features__title">УВАГА ДО ДЕТАЛЕЙ</h3>
               <p class="features__text">
                 Ідейні міркування, і навіть початок повсякденної роботи з
                 формування позиції.
@@ -101,9 +183,7 @@
                   <use href="./imges/icons.svg#clock-1"></use>
                 </svg>
               </div>
-              <h3 class="section-subtitle features__title">
-                ПУНКТУАЛЬНІСТЬ
-              </h3>
+              <h3 class="section-subtitle features__title">ПУНКТУАЛЬНІСТЬ</h3>
               <p class="features__text">
                 Завдання організації, особливо рамки і місце навчання кадрів
                 тягне у себе.
@@ -483,12 +563,12 @@
     <!-- підвал -->
     <footer class="footer">
       <div class="container footer__group">
-        <div>
+        <div class="footer__wrap wrapper">
           <a href="./index.html" class="footer__title"
             ><span class="logo">Web</span>Studio</a
           >
           <address class="address">
-            <p class="address__maps">м. Київ, пр-т Лесі Українки, 26</p>
+            <p class="address__maps">м.Київ, пр-т Лесі Українки, 26</p>
             <ul class="address__list list">
               <li class="address__mail">
                 <a href="mailto:info@devstudio.com" class="address__link"
@@ -503,7 +583,7 @@
             </ul>
           </address>
         </div>
-        <div class="social__group">
+        <div class="social__group wrapper">
           <h3 class="social__title">приєднуйтесь</h3>
           <ul class="social__list list">
             <li class="social__items">
@@ -556,9 +636,9 @@
             </li>
           </ul>
         </div>
-        <div class="subscription">
+        <div class="subscription wrapper">
           <p class="subscription__title">Підпишіться на розсилку</p>
-          <form class="subscription__form">
+          <form class="subscription__form wrapper">
             <label>
               <input
                 type="email"
@@ -648,7 +728,7 @@
                 </svg>
               </span>
               Погоджуюся з розсилкою та приймаю
-              <a href="./" class="checkbox__link"> Умови договору</a>
+              <a href="./" class="checkbox__link">Умови договору</a>
             </label>
           </div>
 
@@ -657,5 +737,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mob-menu.js"></script>
   </body>
 </html>
