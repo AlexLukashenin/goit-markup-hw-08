@@ -46,7 +46,7 @@
           <li>
             <a href="mailto:info@devstudio.com" class="connect__link">
               <svg class="icon__mail" width="16" height="12">
-                <use href="./imges/icons.svg#envelope-hover-1"></use>
+                <use href="./images/icons.svg#envelope-hover-1"></use>
               </svg>
               info@devstudio.com
             </a>
@@ -54,7 +54,7 @@
           <li>
             <a href="tel:+380961111111" class="connect__link">
               <svg class="icon__tell" width="10" height="16">
-                <use href="./imges/icons.svg#smartphone"></use>
+                <use href="./images/icons.svg#smartphone"></use>
               </svg>
               +38 096 111 11 11
             </a>
@@ -62,7 +62,7 @@
         </ul>
         <button type="button" class="menu__open" data-menu-open>
           <svg class="icon-menu" width="24" height="16">
-            <use href="./imges/icons.svg#icon-mob-menu"></use>
+            <use href="./images/icons.svg#icon-mob-menu"></use>
           </svg>
         </button>
       </div>
@@ -71,7 +71,7 @@
           <div class="mob-menu__top">
             <button type="button" class="menu__close" data-menu-close>
               <svg class="icon-close-menu" width="18.67" height="18.67">
-                <use href="./imges/icons.svg#icon-close-mob-menu"></use>
+                <use href="./images/icons.svg#icon-close-mob-menu"></use>
               </svg>
             </button>
 
@@ -178,15 +178,41 @@
           </ul>
           <!-- проекти -->
           <ul class="list gallery-list">
-            <li>
+            <li class="gallary-list__item">
               <a href="" class="gallery-list__link">
                 <div class="gallery-list__wrap">
-                  <img
-                    src="./imges/portfolio/img_1.jpg"
-                    alt="ноутбук"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <!-- desktop -->
+                    <source
+                      srcset="
+                        ./images/portfolio_desk/img_desk1.jpg    1x,
+                        ./images/portfolio_desk/img_desk1_2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <!-- tablet -->
+                    <source
+                      srcset="
+                        ./images/portfolio_tab/img_tab1.jpg    1x,
+                        ./images/portfolio_tab/img_tab1_2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <!-- mobile -->
+                    <source
+                      srcset="
+                        ./images/portfolio_mob/img_mob1.jpg    1x,
+                        ./images/portfolio_mob/img_mob1_2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      src="./images/portfolio_desk/img_desk1.jpg"
+                      alt="ноутбук"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <p class="gallery-list__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -199,15 +225,41 @@
                 </div>
               </a>
             </li>
-            <li class="project">
+            <li class="gallary-list__item">
               <a href="" class="gallery-list__link">
                 <div class="gallery-list__wrap">
-                  <img
-                    src="./imges/portfolio/img_2.jpg"
-                    alt="баскетбол"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <!-- desktop -->
+                    <source
+                      srcset="
+                        ./images/portfolio_desk/img_desk2.jpg    1x,
+                        ./images/portfolio_desk/img_desk2_2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <!-- tablet -->
+                    <source
+                      srcset="
+                        ./images/portfolio_tab/img_tab2.jpg    1x,
+                        ./images/portfolio_tab/img_tab2_2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <!-- mobile -->
+                    <source
+                      srcset="
+                        ./images/portfolio_mob/img_mob2.jpg    1x,
+                        ./images/portfolio_mob/img_mob2_2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      src="./images/portfolio_desk/img_desk2.jpg"
+                      alt="баскетбол"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <p class="gallery-list__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -222,15 +274,41 @@
                 </div>
               </a>
             </li>
-            <li class="project">
+            <li class="gallary-list__item">
               <a href="" class="gallery-list__link">
                 <div class="gallery-list__wrap">
-                  <img
-                    src="./imges/portfolio/img_3.jpg"
-                    alt="логотип ресторану"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <!-- desktop -->
+                    <source
+                      srcset="
+                        ./images/portfolio_desk/img_desk3.jpg    1x,
+                        ./images/portfolio_desk/img_desk3_2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <!-- tablet -->
+                    <source
+                      srcset="
+                        ./images/portfolio_tab/img_tab3.jpg    1x,
+                        ./images/portfolio_tab/img_tab3_2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <!-- mobile -->
+                    <source
+                      srcset="
+                        ./images/portfolio_mob/img_mob3.jpg    1x,
+                        ./images/portfolio_mob/img_mob3_2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      src="./images/portfolio_desk/img_desk3.jpg"
+                      alt="логотип ресторану"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <p class="gallery-list__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -243,15 +321,41 @@
                 </div>
               </a>
             </li>
-            <li class="project">
+            <li class="gallary-list__item">
               <a href="" class="gallery-list__link">
                 <div class="gallery-list__wrap">
-                  <img
-                    src="./imges/portfolio/img_4.jpg"
-                    alt="навушники"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <!-- desktop -->
+                    <source
+                      srcset="
+                        ./images/portfolio_desk/img_desk4.jpg    1x,
+                        ./images/portfolio_desk/img_desk4_2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <!-- tablet -->
+                    <source
+                      srcset="
+                        ./images/portfolio_tab/img_tab4.jpg    1x,
+                        ./images/portfolio_tab/img_tab4_2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <!-- mobile -->
+                    <source
+                      srcset="
+                        ./images/portfolio_mob/img_mob4.jpg    1x,
+                        ./images/portfolio_mob/img_mob4_2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      src="./images/portfolio_desk/img_desk4.jpg"
+                      alt="навушники"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <p class="gallery-list__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -264,16 +368,42 @@
                 </div>
               </a>
             </li>
-            <li class="project">
+            <li class="gallary-list__item">
               <a href="" class="gallery-list__link">
                 <div class="gallery-list__wrap">
-                  <img
-                    src="./imges/portfolio/img_5.jpg"
-                    alt="коробки"
-                    width="370"
-                    height="294"
-                  />
-                  <p class="gallery-list__text">
+                  <picture>
+                    <!-- desktop -->
+                    <source
+                      srcset="
+                        ./images/portfolio_desk/img_desk5.jpg    1x,
+                        ./images/portfolio_desk/img_desk5_2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <!-- tablet -->
+                    <source
+                      srcset="
+                        ./images/portfolio_tab/img_tab5.jpg    1x,
+                        ./images/portfolio_tab/img_tab5_2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <!-- mobile -->
+                    <source
+                      srcset="
+                        ./images/portfolio_mob/img_mob5.jpg    1x,
+                        ./images/portfolio_mob/img_mob5_2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      src="./images/portfolio_desk/img_desk5.jpg"
+                      alt="коробки"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
+                                   <p class="gallery-list__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
                     отримати вичерпні відомості про компанію чи приватну особу.
@@ -285,16 +415,42 @@
                 </div>
               </a>
             </li>
-            <li class="project">
+            <li class="gallary-list__item">
               <a href="" class="gallery-list__link">
                 <div class="gallery-list__wrap">
-                  <img
-                    src="./imges/portfolio/img_6.jpg"
-                    alt="монітор"
-                    width="370"
-                    height="294"
-                  />
-                  <p class="gallery-list__text">
+                  <picture>
+                    <!-- desktop -->
+                    <source
+                      srcset="
+                        ./images/portfolio_desk/img_desk6.jpg    1x,
+                        ./images/portfolio_desk/img_desk6_2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <!-- tablet -->
+                    <source
+                      srcset="
+                        ./images/portfolio_tab/img_tab6.jpg    1x,
+                        ./images/portfolio_tab/img_tab6_2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <!-- mobile -->
+                    <source
+                      srcset="
+                        ./images/portfolio_mob/img_mob6.jpg    1x,
+                        ./images/portfolio_mob/img_mob6_2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      src="./images/portfolio_desk/img_desk6.jpg"
+                      alt="монітор"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
+                                   <p class="gallery-list__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
                     отримати вичерпні відомості про компанію чи приватну особу.
@@ -308,16 +464,42 @@
                 </div>
               </a>
             </li>
-            <li class="project">
+            <li class="gallary-list__item">
               <a href="" class="gallery-list__link">
                 <div class="gallery-list__wrap">
-                  <img
-                    src="./imges/portfolio/img_7.jpg"
-                    alt="газета"
-                    width="370"
-                    height="294"
-                  />
-                  <p class="gallery-list__text">
+                  <picture>
+                    <!-- desktop -->
+                    <source
+                      srcset="
+                        ./images/portfolio_desk/img_desk7.jpg    1x,
+                        ./images/portfolio_desk/img_desk7_2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <!-- tablet -->
+                    <source
+                      srcset="
+                        ./images/portfolio_tab/img_tab7.jpg    1x,
+                        ./images/portfolio_tab/img_tab7_2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <!-- mobile -->
+                    <source
+                      srcset="
+                        ./images/portfolio_mob/img_mob7.jpg    1x,
+                        ./images/portfolio_mob/img_mob7_2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      src="./images/portfolio_desk/img_desk7.jpg"
+                      alt="газета"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
+                                   <p class="gallery-list__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
                     отримати вичерпні відомості про компанію чи приватну особу.
@@ -329,16 +511,42 @@
                 </div>
               </a>
             </li>
-            <li class="project">
+            <li class="gallary-list__item">
               <a href="" class="gallery-list__link">
                 <div class="gallery-list__wrap">
-                  <img
-                    src="./imges/portfolio/img_8.jpg"
-                    alt="бірка"
-                    width="370"
-                    height="294"
-                  />
-                  <p class="gallery-list__text">
+                  <picture>
+                    <!-- desktop -->
+                    <source
+                      srcset="
+                        ./images/portfolio_desk/img_desk8.jpg    1x,
+                        ./images/portfolio_desk/img_desk8_2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <!-- tablet -->
+                    <source
+                      srcset="
+                        ./images/portfolio_tab/img_tab8.jpg    1x,
+                        ./images/portfolio_tab/img_tab8_2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <!-- mobile -->
+                    <source
+                      srcset="
+                        ./images/portfolio_mob/img_mob8.jpg    1x,
+                        ./images/portfolio_mob/img_mob8_2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      src="./images/portfolio_desk/img_desk8.jpg"
+                      alt="бірка"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
+                                    <p class="gallery-list__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
                     отримати вичерпні відомості про компанію чи приватну особу.
@@ -350,16 +558,42 @@
                 </div>
               </a>
             </li>
-            <li class="project">
+            <li class="gallary-list__item">
               <a href="" class="gallery-list__link">
                 <div class="gallery-list__wrap">
-                  <img
-                    src="./imges/portfolio/img_9.jpg"
-                    alt="ноутбук"
-                    width="370"
-                    height="294"
-                  />
-                  <p class="gallery-list__text">
+                  <picture>
+                    <!-- desktop -->
+                    <source
+                      srcset="
+                        ./images/portfolio_desk/img_desk9.jpg    1x,
+                        ./images/portfolio_desk/img_desk9_2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <!-- tablet -->
+                    <source
+                      srcset="
+                        ./images/portfolio_tab/img_tab9.jpg    1x,
+                        ./images/portfolio_tab/img_tab9_2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <!-- mobile -->
+                    <source
+                      srcset="
+                        ./images/portfolio_mob/img_mob9.jpg    1x,
+                        ./images/portfolio_mob/img_mob9_2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      src="./images/portfolio_desk/img_desk9.jpg"
+                      alt="ноутбук"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
+                                    <p class="gallery-list__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
                     отримати вичерпні відомості про компанію чи приватну особу.
@@ -409,7 +643,7 @@
                 rel="noopener"
               >
                 <svg class="social__icon" width="20" height="20">
-                  <use href="./imges/icons.svg#instagram-2"></use>
+                  <use href="./images/icons.svg#instagram-2"></use>
                 </svg>
               </a>
             </li>
@@ -421,7 +655,7 @@
                 rel="noopener"
               >
                 <svg class="social__icon" width="20" height="20">
-                  <use href="./imges/icons.svg#twitter-1"></use>
+                  <use href="./images/icons.svg#twitter-1"></use>
                 </svg>
               </a>
             </li>
@@ -433,7 +667,7 @@
                 rel="noopener"
               >
                 <svg class="social__icon" width="20" height="20">
-                  <use href="./imges/icons.svg#facebook-1"></use>
+                  <use href="./images/icons.svg#facebook-1"></use>
                 </svg>
               </a>
             </li>
@@ -445,7 +679,7 @@
                 rel="noopener"
               >
                 <svg class="social__icon" width="20" height="20">
-                  <use href="./imges/icons.svg#linkedin-1"></use>
+                  <use href="./images/icons.svg#linkedin-1"></use>
                 </svg>
               </a>
             </li>
@@ -467,7 +701,7 @@
             <button type="submit" class="subscription__btn">
               Підписатися
               <svg class="subscription__icon" width="24" height="24">
-                <use href="./imges/icons.svg#icon-send-1"></use>
+                <use href="./images/icons.svg#icon-send-1"></use>
               </svg>
             </button>
           </form>

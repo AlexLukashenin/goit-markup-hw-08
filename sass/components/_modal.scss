@@ -4,43 +4,42 @@
   background-color: rgba(0, 0, 0, 0.2);
   position: fixed;
   top: 0;
-  // left: 0;
+  left: 0;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  padding: 95px 15px;
-  overflow-y: scroll;
-  @include mobile {
-  }
-}
 
+  overflow-y: scroll;
+}
 .is-hidden {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
 }
 .modal {
-  height: 100vh;
-
+  width: 300px;
+  min-height: 570px;
   background-color: var(--main-background-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   padding: 40px;
-  position: relative;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1) rotate(0);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1);
   @include mobile {
-    max-width: 450px;
-    width: 100%;
-    height: 609px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(1) rotate(0);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    width: 450px;
+    min-height: 609px;
+  }
+  @include tablet {
+    width: 450px;
+    min-height: 609px;
   }
   @include desktop {
     width: 528px;
-    height: 581px;
+    min-height: 581px;
   }
 }
 .backdrop.is-hidden .modal {
@@ -71,10 +70,13 @@
 }
 
 .modal__title {
-  @include font(20, 1.5, 700, 0.03);
+  @include font(16, 1.5, 700, 0.03);
   text-align: center;
   color: var(--main-text-color);
   margin-bottom: 12px;
+  @include mobile {
+    @include font(20, 1.5, 700, 0.03);
+  }
   @include desktop {
     @include font(20, 1.15, 700, 0.03);
   }
@@ -148,15 +150,10 @@
   justify-content: center;
 }
 .checkbox__text {
-  @include font(12, 1.16, null, 0.03);
-  color: var(--title-text-color);
   display: flex;
   align-items: center;
-  @include desktop {
-    @include font(14, 1.71, null, 0.03);
-  }
 }
-.checkbox__text span {
+.checkbox__text > .checkbox__check {
   width: 16px;
   height: 15px;
   border: 2px solid #212121;
@@ -165,16 +162,26 @@
   align-items: center;
   justify-content: center;
   fill: none;
-  margin-right: 7px;
+  margin-right: 8px;
   .checkbox__style:checked + & {
     fill: var(--text-color);
     background-color: var(--checkbox-color);
     border: var(--checkbox-color);
   }
 }
+.checkbox__text-agreement {
+  @include font(10, 1.16, null, 0.03);
+  color: var(--title-text-color);
 
+  @include desktop {
+    @include font(12, 1.16, null, 0.03);
+  }
+  @include desktop {
+    @include font(14, 1.71, null, 0.03);
+  }
+}
 .checkbox__link {
-  // margin-left: 2px;
+  margin-left: 2px;
   color: var(--checkbox-color);
 }
 .button__submint {

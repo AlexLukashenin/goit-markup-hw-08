@@ -3,9 +3,18 @@
   flex-wrap: wrap;
   gap: 30px;
 }
+.gallary-list__item {
+  width: 100%;
+  @include tablet {
+    width: calc((100% - 30px) / 2);
+  }
+  @include desktop {
+    width: calc((100% - 60px) / 3);
+  }
+}
 .gallery-list__link {
-  display: block;
-  max-width: 370px;
+  // display: block;
+
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
@@ -15,8 +24,13 @@
 }
 
 .gallery-list__wrap {
+  display: block;
   position: relative;
   overflow: hidden;
+  @include mobile {
+    width: 100%;
+    height: 294px;
+  }
 }
 .gallery-list__text {
   @include font(18, 1.55, null, 0.03);
