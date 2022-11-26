@@ -4,7 +4,7 @@
   color: var(--main-text-color);
   
   margin-bottom: 30px;
-  @media screen and (min-width: 1200px) {
+  @include desktop{
     margin-bottom: 50px;
     @include font(36, 1.16, 700, 0.03);
   }

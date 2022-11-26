@@ -2,17 +2,15 @@
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     flex-wrap: nowrap;
   }
 }
 .features__item {
-  // max-width: 270px;
-  // width: 100%;
-  @media screen and (min-width: 768px) {
+  @include tablet {
     width: calc((100% - 30px) / 2);
   }
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     width: calc((100% - 30px) / 4);
   }
 }
@@ -32,7 +30,7 @@
   color: var(--main-text-color);
   margin-bottom: 10px;
   text-align: center;
-  @media screen and (min-width: 768px) {
+  @include tablet {
     text-align:start;
   }
 }
