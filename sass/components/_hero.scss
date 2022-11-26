@@ -4,7 +4,7 @@
   text-align: center;
   margin: 0px auto;
   background: var(--hero-background-color);
-  background-image: var(--gradient), url(../imges/mob_img/hero_bg_mob.jpg);
+  background-image: var(--gradient), url(../images/mob_img/hero_bg_mob.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -34,7 +34,7 @@
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       background-image: var(--gradient),
-        url(/images/desc_img/hero_bg_desk_2x.jpg);
+        url(../images/desc_img/hero_bg_desk_2x.jpg);
     }
   }
 }
