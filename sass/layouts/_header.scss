@@ -97,6 +97,7 @@
 .connect__link {
   @include font(12, 1.16, 500, 0.02);
   display: flex;
+
   color: var(--title-text-color);
   gap: 10px;
   align-items: center;
@@ -107,31 +108,31 @@
   }
   @include desktop {
     @include font(14, 1.14, 500, 0.02);
-  }
-}
-.mail {
-  @include tablet {
-    padding-top: 21px;
-  }
-  @include desktop {
     padding-top: 32px;
     padding-bottom: 32px;
+  }    
   }
-}
-.tell {
-  @include tablet {
-    padding-bottom: 21px;
-  }
-  @include desktop {
-    padding-top: 32px;
-    padding-bottom: 32px;
-  }
-}
 .icon__mail {
   fill: currentColor;
+  @include tablet {
+    width: 14px;
+    height: 10px;
+  }
+  @include desktop {
+    width: 16px;
+    height: 12px;
+  }
 }
 .icon__tell {
   fill: currentColor;
+  @include tablet {
+    width: 10px;
+    height: 14px;
+  }
+  @include desktop {
+    width: 10px;
+    height: 16px;
+  }
 }
 // -------мобільне меню
 .menu__open {
